@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commissioning the Organization — Martin Kockx</title>
+<meta name="description" content="If failed adoption is a readiness problem, here's what you actually build: an Operational Readiness Owner with authority, and a gate that can say 'not now' — Organizational Commissioning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/theme.js"></script>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="site-nav">
+  <div class="bar">
+    <a class="brand" href="../index.html">Martin <span class="mk">Kockx</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Writing</a></li>
+      <li><a href="../papers/index.html">Papers</a></li>
+      <li><a href="../resume/index.html">Résumé</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="art-hero">
+  <div class="wrap">
+    <div class="kicker">Operational Readiness · Field Notes <span class="part">· Part 2</span></div>
+    <h1>Commissioning the Organization</h1>
+    <p class="dek">The first time a site says "we're not ready" should be at design, not at go-live. That's a job — and it needs an owner.</p>
+    <div class="byline">
+      <strong>Martin Kockx</strong>
+      <span class="dot"></span>
+      <span>Manufacturing Systems &amp; Digital Operations</span>
+      <span class="dot"></span>
+      <span>6 min read</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<article>
+
+  <p class="lead">In the last piece I described a deployment that was designed right, built right, and signed off by everyone — and stalled at the wall when the site decided, at go-live, that it wasn't ready. I ended on a claim I want to make good on: readiness isn't a softer word for motivation; it's closer to architecture. So here's the harder question. If the problem isn't conviction, what do you actually build?</p>
+
+  <p>Two things, it turns out. An owner, and a gate.</p>
+
+  <h2 class="section">Champion ≠ Owner</h2>
+
+  <p>We had change champions. Good ones. And they still couldn't move it, because a champion is built to supply conviction, not authority. A champion can explain why the system matters, model enthusiasm, answer questions in the town hall. What a champion <em>cannot</em> do is free up an operator's afternoon, reorder the site's competing priorities, or decide that a stack of SOPs will be rewritten before go-live. Those are the constraints that actually determine whether a site can absorb a system — and they sit with line management, not with the champion we appointed to carry the message to them.</p>
+
+  <p>So the role that was missing wasn't more advocacy. It was an <strong>Operational Readiness Owner</strong>: a single named person, on the receiving side, accountable for whether the organization is ready to run the thing — and holding real authority over the constraints that decide it. Not a messenger. A decision-maker.</p>
+
+  <p>And the timing matters as much as the title. We named champions once the build was underway. An Operational Readiness Owner has to be named at <em>initiation</em>, before a line of code — because their first job is the one nobody did: telling us, early, what readiness would actually cost.</p>
+
+  <figure>
+    <div class="figtitle">The role we appointed vs. the role we needed</div>
+    <div class="vs">
+      <div class="vs-col vs-a">
+        <div class="sub">What we had</div>
+        <h4>Change Champion</h4>
+        <ul>
+          <li class="has">Supplies conviction &amp; the "why"</li>
+          <li class="has">Models enthusiasm, fields questions</li>
+          <li class="no">Can't free capacity</li>
+          <li class="no">Can't reorder priorities</li>
+          <li class="no">Can't mandate SOP rework</li>
+          <li class="no">Named once the build is underway</li>
+        </ul>
+      </div>
+      <div class="vs-mid"><span class="ne">≠</span></div>
+      <div class="vs-col vs-b">
+        <div class="sub">What we needed</div>
+        <h4>Operational Readiness Owner</h4>
+        <ul>
+          <li class="has">Holds authority over the line's constraints</li>
+          <li class="has">Allocates capacity</li>
+          <li class="has">Sets priority</li>
+          <li class="has">Mandates rework up front</li>
+          <li class="has">Can say <em>no</em></li>
+          <li class="has">Named at project initiation</li>
+        </ul>
+      </div>
+    </div>
+    <figcaption>A champion carries the message. An owner holds the constraints. The first article's wall was the gap between them.</figcaption>
+  </figure>
+
+  <h2 class="section">Commission the organization like equipment.</h2>
+
+  <p>Here's the discipline we already have, sitting right next to us, that we never thought to point at ourselves.</p>
+
+  <p>We would never energize a new line without commissioning it. Installation qualification: is it installed correctly? Operational qualification: does it run across its range? Performance qualification: does it hold up under real conditions, repeatedly? IQ, OQ, PQ. No one argues about this. No one ships a skid to the floor and finds out at startup whether the utilities are connected.</p>
+
+  <p>We ship <em>organizations</em> to the floor that way all the time.</p>
+
+  <p>So name the parallel and run it. <strong>Organizational Commissioning</strong> — the same three gates, pointed at the people and the procedures instead of the pipes.</p>
+
+  <figure>
+    <div class="figtitle">Same three gates, different system</div>
+    <div class="cq">
+      <div class="cq-eq">
+        <span class="cq-tag">Equipment C&amp;Q</span>
+        <div class="cq-row">
+          <div class="cq-label">We already<br>do this</div>
+          <div class="cq-gates">
+            <div class="gate"><span class="g-name">IQ</span><span class="g-desc">Installed correctly</span></div>
+            <div class="cq-arrow">→</div>
+            <div class="gate"><span class="g-name">OQ</span><span class="g-desc">Runs across its range</span></div>
+            <div class="cq-arrow">→</div>
+            <div class="gate"><span class="g-name">PQ</span><span class="g-desc">Holds under real conditions</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="cq-divider"></div>
+      <div class="cq-org">
+        <span class="cq-tag">Organizational Commissioning</span>
+        <div class="cq-row">
+          <div class="cq-label">We almost<br>never do</div>
+          <div class="cq-gates">
+            <div class="gate"><span class="g-name">Org-IQ</span><span class="g-desc">Owner + authority + capacity allocated</span></div>
+            <div class="cq-arrow">→</div>
+            <div class="gate"><span class="g-name">Org-OQ</span><span class="g-desc">SOPs reworked, training, walkthrough passed</span></div>
+            <div class="cq-arrow">→</div>
+            <div class="gate"><span class="g-name">Org-PQ</span><span class="g-desc">Maturity, lifecycle owner, durable staffing</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figcaption>Every item on the lower track is something the site had to confront anyway — just discovered after the build, when the only options left were expensive.</figcaption>
+  </figure>
+
+  <h2 class="section">A review that puts three maps on one sheet.</h2>
+
+  <p>The last piece ended on three maps of the same site: where leadership thought it was, where the project team aimed, and where the site actually stood. The failure wasn't that the maps differed — maps always differ. The failure was that nobody made them disagree out loud until go-live.</p>
+
+  <p>That's what the gate is for. A <strong>Readiness Review</strong>, early, co-owned by the Operational Readiness Owner, whose entire purpose is to force the three maps onto one sheet while the cost of changing course is still low. Not a status update. A go/no-go with the authority to actually say no — the organizational equivalent of a commissioning gate that can hold a startup.</p>
+
+  <figure>
+    <div class="figtitle">The disagreement happens here — at design, not at go-live</div>
+    <div class="rr">
+      <svg viewBox="0 0 640 230" role="img" aria-label="Three divergent maps converging into one shared map and a go/no-go gate">
+        <defs>
+          <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L7,3 L0,6 Z"></path>
+          </marker>
+        </defs>
+        <g font-family="Inter, sans-serif" font-size="13" font-weight="600">
+          <circle class="m-site" cx="20" cy="40" r="7"></circle>
+          <text class="t-ink" x="36" y="38">Site&rsquo;s reality</text>
+          <text class="t-faint" x="36" y="54" font-weight="400" font-size="11.5">overloaded, no slack</text>
+
+          <circle class="m-team" cx="20" cy="115" r="7"></circle>
+          <text class="t-ink" x="36" y="113">Team&rsquo;s target</text>
+          <text class="t-faint" x="36" y="129" font-weight="400" font-size="11.5">the sensible next step</text>
+
+          <circle class="m-lead" cx="20" cy="190" r="7"></circle>
+          <text class="t-ink" x="36" y="188">Leadership&rsquo;s assumption</text>
+          <text class="t-faint" x="36" y="204" font-weight="400" font-size="11.5">nearly there already</text>
+        </g>
+        <g fill="none" stroke-width="2.5" marker-end="url(#ah)">
+          <path class="s-site" d="M210,40 C320,40 360,115 432,115" opacity="0.9"></path>
+          <path class="s-team" d="M210,115 L432,115" opacity="0.9"></path>
+          <path class="s-lead" d="M210,190 C320,190 360,115 432,115" opacity="0.9"></path>
+        </g>
+        <g>
+          <rect class="gate-box" x="442" y="78" width="180" height="74" rx="12" stroke-width="1.5"></rect>
+          <text class="t-accent" x="532" y="104" text-anchor="middle" font-family="Fraunces, serif" font-size="16" font-weight="600">Readiness Review</text>
+          <text class="t-ink" x="532" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="12">one shared map</text>
+          <text class="t-warn" x="532" y="141" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600">go / no&dash;go</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>Owned by the Operational Readiness Owner. When the review has teeth, "the site isn't ready" stops being an ambush and becomes a finding — with names attached and a cost estimate.</figcaption>
+  </figure>
+
+  <h2 class="section">"Not now" is a finding, not a failure.</h2>
+
+  <p>Here's the part that's hardest to accept and most worth it: the point of commissioning is not to pass. It's to tell you the truth.</p>
+
+  <p>A gate that can only return "go" isn't a gate; it's a formality. The value of Organizational Commissioning is that it can return <em>not now</em> — early, cheaply, and with evidence — instead of letting a site discover the same answer at go-live after the money is spent and the team is exhausted. A disciplined "not now" is the system working. It tells you the scope was too big, or the timing was wrong, or the capacity was never real — at the point where you can still do something about it.</p>
+
+  <div class="pull">We treated our stall as a project failure. <span>With an owner and a real gate, it would have been a decision — made a year earlier, for a tenth of the cost.</span></div>
+
+  <h2 class="section">Readiness is something you install.</h2>
+
+  <p>I keep coming back to the same place. The reason leadership's ambition doesn't reach the floor isn't that the floor lacks will. It's that readiness was never installed — and you can't motivate your way to a thing that has to be built. We know how to commission equipment because we've been burned by skipping it. We're still learning that the organization is part of the system, and that it has to be commissioned too.</p>
+
+  <p>Give it an owner. Give the owner authority. Run the gates. And let the first honest "not ready" arrive while it's still cheap to hear.</p>
+
+  <div class="endmark">· · ·</div>
+
+  <nav class="series-nav">
+    <a href="we-commission-systems-and-equipment.html">
+      <div class="dir">← Part 1 · Previous</div>
+      <div class="t">We Commission Systems &amp; Equipment. We Forget to Commission the Organization.</div>
+    </a>
+    <span></span>
+  </nav>
+
+</article>
+</div>
+
+<footer class="site-foot">
+  <div class="cols">
+    <div>© 2026 Martin Kockx</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

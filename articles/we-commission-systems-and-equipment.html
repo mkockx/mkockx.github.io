@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We Commission Systems &amp; Equipment. We Forget to Commission the Organization. — Martin Kockx</title>
+<meta name="description" content="A deployment designed right, built right, and signed off by everyone — and stalled at the wall when the site decided it wasn't ready. Why adoption failure is a readiness problem, not a motivation problem.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/theme.js"></script>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="site-nav">
+  <div class="bar">
+    <a class="brand" href="../index.html">Martin <span class="mk">Kockx</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Writing</a></li>
+      <li><a href="../papers/index.html">Papers</a></li>
+      <li><a href="../resume/index.html">Résumé</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="art-hero">
+  <div class="wrap">
+    <div class="kicker">Operational Readiness · Field Notes <span class="part">· Part 1</span></div>
+    <h1>We Commission Systems &amp; Equipment.<br>We Forget to Commission the Organization.</h1>
+    <p class="dek">A deployment can be designed right, built right, and signed off by everyone — and still hit a wall the moment it meets the floor.</p>
+    <div class="byline">
+      <strong>Martin Kockx</strong>
+      <span class="dot"></span>
+      <span>Manufacturing Systems &amp; Digital Operations</span>
+      <span class="dot"></span>
+      <span>6 min read</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<article>
+
+  <p class="lead">Here is a failure mode I've been sitting with, because it doesn't fit the story we usually tell about change.</p>
+
+  <p>A regulated site needed a better way to operate, monitor, and control its equipment — tighter control over changes, better accessibility, stronger compliance. Leadership identified the need. It was real and it was obvious. For once, there was no debate about <em>whether</em> something had to improve. Everyone, top to floor, agreed that the status quo wasn't good enough.</p>
+
+  <p>The project team that picked it up had deployed systems like this before, in larger and more mature facilities. So they didn't just see a box to check — they saw an opportunity to do it properly. End-to-end execution. Operators empowered to capture data at the point of work. Real attributability tying actions to batches and process steps. Tighter monitoring of progress, alarms, and events. The kind of build that doesn't just satisfy the requirement but moves the site forward a generation.</p>
+
+  <p>Everyone saw that plan. Everyone signed off on the design. The team ran the textbook process — change control, design, build, test. We had the change champions. We had senior leadership oversight. We were constantly pulling stakeholders in for input. By every measure of how we're taught to manage change, this was done right.</p>
+
+  <h2 class="section">The wall came at implementation.</h2>
+
+  <p>When it was time to put the system into the GMP environment and through testing, the response from line managers and business owners was, in effect: <em>we don't think the site is ready for this.</em> There's too much else going on. Too many competing initiatives. We'd have to rewrite a stack of SOPs, work instructions, and batch records. We don't have the time. We can't absorb this right now.</p>
+
+  <p>All of which, in hindsight, should have been obvious from the beginning. It wasn't.</p>
+
+  <figure>
+    <div class="figtitle">The deployment that ran clean — until go-live</div>
+    <div class="timeline">
+      <div class="tl-step"><div class="tl-node">Need<br>identified</div></div>
+      <div class="tl-arrow">→</div>
+      <div class="tl-step"><div class="tl-node">Design<br>&amp; sign-off</div></div>
+      <div class="tl-arrow">→</div>
+      <div class="tl-step"><div class="tl-node">Change<br>control</div></div>
+      <div class="tl-arrow">→</div>
+      <div class="tl-step"><div class="tl-node">Build<br>&amp; test</div></div>
+      <div class="tl-wall"><span class="wlabel">The wall</span><div class="brick"></div></div>
+      <div class="tl-blocked"><div class="tl-node">GMP go-live<br><em>stalled</em></div></div>
+    </div>
+    <div class="tl-sub"><span>Every gate cleared — by the book</span><span>Readiness surfaced last</span></div>
+    <figcaption>The technical project succeeded at every checkpoint. The organizational question — can this site actually run it? — was never on the gate list, so it arrived at the most expensive possible moment.</figcaption>
+  </figure>
+
+  <p>So the project team is left asking the question that stings the most: did we try to do too much? Should we have stayed small — narrow scope, quick win, low disruption — and skipped the ambition entirely?</p>
+
+  <p>Here's what makes it more than a scoping lesson. The <em>same</em> leadership layer that wanted the site to slow down also wants everything digital. No manual interactions. Review by exception. Release by exception. Full integration across systems. And they don't understand why that future isn't already on the roadmap — they feel they've had plenty of time, plenty of steering forums, plenty of chances to weigh in.</p>
+
+  <h2 class="section">Three maps, one site.</h2>
+
+  <p>What we ended up with were three different maps of the same territory. Where the site actually was. Where senior leadership believed the site was. And where the project team knew the site needed to go — but had no authority to drive the buy-in and participation that getting there required. Three maps, one site, and no shared understanding that they didn't match.</p>
+
+  <figure>
+    <div class="figtitle">One maturity path — three beliefs about where the site stands</div>
+    <div class="axis-wrap">
+      <div class="axis-ends"><span class="start">Today's state</span><span class="end">Fully digital operation</span></div>
+      <div class="track">
+        <div class="marker" style="left:16%;"><div class="pin c-site"></div></div>
+        <div class="marker" style="left:46%;"><div class="pin c-team"></div></div>
+        <div class="marker" style="left:90%;"><div class="pin c-lead"></div></div>
+      </div>
+    </div>
+    <div class="legend">
+      <div class="lg-item"><span class="lg-swatch c-site"></span><div><h4>Where the site actually is</h4><p>Overloaded, mid-initiative, no slack to absorb new ways of working — and changing every SOP, work instruction, and batch record this touches.</p></div></div>
+      <div class="lg-item"><span class="lg-swatch c-team"></span><div><h4>Where the project team aimed</h4><p>A sensible, generational next step the site could grow into — but without the authority to secure the buy-in that step demanded.</p></div></div>
+      <div class="lg-item"><span class="lg-swatch c-lead"></span><div><h4>Where leadership assumed it was</h4><p>Nearly at the destination — review by exception, full integration, no manual steps — and puzzled that it isn't already on the roadmap.</p></div></div>
+    </div>
+    <figcaption>The distance between the markers is the disconnect. Nobody was wrong about the goal; everyone was wrong about the gap.</figcaption>
+  </figure>
+
+  <p>What's left is the hard part. A system that is genuinely well built. It does everything it needs to — accurate tracking, monitoring, and control of the process. And the business owners don't want to turn it on. Too complex. Operators can't handle it. Too many systems to work in. Why didn't we integrate so there's less duplicate entry? All the classic fears, surfacing at the worst possible moment — after the build, not before it.</p>
+
+  <p>I keep turning over what could have changed this. How much preparation was actually possible? Was it a communication failure? Was it simply the wrong time? Did the site legitimately not have the resources to take this on? Or is it fear — of the unknown, of a thing not yet understood and therefore not yet trusted?</p>
+
+  <p>I want to be honest about my own assumptions. It's possible the team over-read the site's readiness and capability. It's possible we should have prepared the organization far more deliberately, far earlier — not just informed it, but built its capacity to receive what was coming. And it's possible this is just the older, harder truth: sometimes a site isn't ready for the next evolution of its own technology, and no amount of project discipline changes that.</p>
+
+  <h2 class="section">But I'm skeptical of one part of the story.</h2>
+
+  <p>The part that says the operators can't handle it. I've watched operators run high-speed lines while manually loading and unloading equipment, talking to an OEE system and an MES at the same time, and still keeping their records straight. They manage genuine complexity every day and do it well. So "they'll be overwhelmed" and "they'll make mistakes" don't sit right with me. That reads less like a fact about the workforce and more like a story the organization tells when it isn't ready.</p>
+
+  <p>And <em>ready</em> is the word I keep landing on. Not motivated — ready.</p>
+
+  <figure>
+    <div class="figtitle">Two different problems, routinely confused</div>
+    <div class="vs">
+      <div class="vs-col vs-mot">
+        <div class="sub">What we keep adding</div>
+        <h4>Motivation</h4>
+        <ul>
+          <li>More communication</li>
+          <li>More change champions</li>
+          <li>More executive sponsorship</li>
+          <li>More training events</li>
+          <li>More conviction at the top</li>
+        </ul>
+      </div>
+      <div class="vs-mid"><span class="ne">≠</span></div>
+      <div class="vs-col vs-rdy">
+        <div class="sub">What was actually missing</div>
+        <h4>Readiness</h4>
+        <ul>
+          <li>A named owner who will run it</li>
+          <li>Capacity deliberately freed first</li>
+          <li>SOPs &amp; records reworked up front</li>
+          <li>Decision rights &amp; intent in place</li>
+          <li>Process maturity to absorb change</li>
+        </ul>
+      </div>
+    </div>
+    <figcaption>Change management can carry people across a small gap. It cannot substitute for readiness that was never built.</figcaption>
+  </figure>
+
+  <p>Understaffing, unclear direction, low process maturity, no slack to absorb change: those are real, and any one of them can sink a deployment no matter how small or sensible it is. We are very good at commissioning equipment — we'd never energize a line without confirming the utilities, the procedures, the trained people, and the named owner were in place first. We rarely extend that same discipline to the organization that has to run what we build.</p>
+
+  <div class="pull">We commission systems and equipment. <span>We forget to commission the organization to receive them.</span></div>
+
+  <p>What worries me looking forward is the gap this exposes. If a site struggles to absorb straightforward operator interactions with one control system, what happens when we ask it to carry full automation, review by exception, and deeply integrated systems? The ambition at the top and the readiness on the floor are drifting apart, and we keep discovering the distance only at go-live — the most expensive possible moment to learn it.</p>
+
+  <p>I don't have this fully resolved, and I'd rather say that than pretend otherwise. But I'm increasingly convinced the answer isn't more communication or more conviction. Readiness isn't a softer word for motivation. It's closer to architecture — something you have to build into the organization deliberately, ahead of need, before anyone can even see why they'll want it.</p>
+
+  <p>More on what that looks like in the next piece.</p>
+
+  <div class="endmark">· · ·</div>
+
+  <nav class="series-nav">
+    <span></span>
+    <a class="next" href="commissioning-the-organization.html">
+      <div class="dir">Next · Part 2 →</div>
+      <div class="t">Commissioning the Organization</div>
+    </a>
+  </nav>
+
+</article>
+</div>
+
+<footer class="site-foot">
+  <div class="cols">
+    <div>© 2026 Martin Kockx</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
