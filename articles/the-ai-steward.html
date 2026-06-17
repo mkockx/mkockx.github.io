@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Steward: The Role That Makes It Safe Enough to Let People Experiment — Martin Kockx</title>
+<meta name="description" content="Centralized AI governance doesn't scale across domains it doesn't understand. The AI steward — a named, dual-fluency role embedded in the domain — is what holds the model together.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/theme.js"></script>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="site-nav">
+  <div class="bar">
+    <a class="brand" href="../index.html">Martin <span class="mk">Kockx</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Writing</a></li>
+      <li><a href="../papers/index.html">Papers</a></li>
+      <li><a href="../resume/index.html">Résumé</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="art-hero">
+  <div class="wrap">
+    <div class="kicker">AI Sandboxes &amp; Stewards · Series <span class="part">· Part 3</span></div>
+    <h1>The AI Steward: The Role That Makes It Safe Enough to Let People Experiment</h1>
+    <p class="dek">You can't govern data — or AI — from a central team that doesn't understand what it means. You need someone who lives in the domain.</p>
+    <div class="byline">
+      <strong>Martin Kockx</strong>
+      <span class="dot"></span>
+      <span>Published Apr 2026</span>
+      <span class="dot"></span>
+      <a href="https://www.linkedin.com/pulse/ai-steward-role-makes-safe-enough-let-people-experiment-martin-kockx-smlje" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<article>
+
+  <p class="lead">Most regulated manufacturers have some form of data steward program. The insight that made data governance work wasn't technical — it was organizational. You can't govern data from a central team that doesn't understand what the data means.</p>
+
+  <p>You need someone who lives in the domain, who understands the process, the context, the failure modes, and you give them the skills and authority to govern data within their function. DAMA International's data management framework codified this: distributed governance, embedded in domain expertise.</p>
+
+  <p>AI governance needs the same pattern.</p>
+
+  <p>In the first article of this series, I described the shadow tier — the invisible layer of unsanctioned AI use that forms when organizations restrict access without providing alternatives. In the second, I argued that training without practice infrastructure decays almost immediately, and that sandboxes — safe, bounded environments for experimentation — are the necessary complement. But sandboxes create their own problem: who governs what happens inside them, and who decides when an experiment is ready to leave?</p>
+
+  <p>That's the question this article tries to answer.</p>
+
+  <h2 class="section">Why Centralized Governance Doesn't Scale</h2>
+
+  <p>A central AI Center of Excellence can build tools, curate platforms, and deliver training. What it cannot do is understand every process, every deviation pattern, every alarm meaning across every manufacturing line. The governance judgment — "is this AI application safe and appropriate for this context?" — requires domain expertise that doesn't centralize.</p>
+
+  <p>This isn't a criticism of central teams. It's a structural observation. The same insight that drove distributed data governance applies here: the people closest to the work are the ones best positioned to judge whether an AI application makes sense in that work context. Anita Woolley and Thomas Malone's research on collective intelligence reinforces this — group performance depends not on concentrating expertise in a few specialists, but on social sensitivity, equal participation, and broad information sharing. Distributing AI capability across the organization, rather than bottlenecking it through a central group, produces better outcomes.</p>
+
+  <h2 class="section">The AI Steward Role</h2>
+
+  <p>The AI steward isn't a new hire. It's a secondary role — think 10-20% of someone's time — for experienced practitioners who already understand their domain. Someone with five or more years on the floor, a track record of initiative, comfort with ambiguity. The steward's value isn't technical AI expertise. That's what the sandbox and training pathway provide. The value is domain knowledge combined with AI literacy — the ability to evaluate an AI application not just on whether it works, but whether it works <em>here</em>, in <em>this</em> process, with <em>these</em> data conditions.</p>
+
+  <p>Three mandates define the role:</p>
+
+  <p><strong>Monitor responsible use.</strong> The steward ensures that AI tools within their function are used appropriately — within sandbox boundaries, with proper documentation, consistent with organizational policy. This isn't surveillance. It's the same judgment a data steward applies when reviewing data quality: someone who understands the context is watching for misuse that a central team wouldn't recognize.</p>
+
+  <p><strong>Shepherd applications through escalation.</strong> When a sandbox experiment shows promise, it needs a path from prototype to pilot to production. The steward is the bridge. They understand what the experiment does, why it matters to the process, and what risks need to be addressed before it scales. Without this bridge, promising experiments stay trapped in the sandbox permanently — interesting but organizationally useless.</p>
+
+  <p><strong>Manage post-deployment review.</strong> Once an AI application is deployed, it isn't finished. Models drift. Vendor updates change system behavior. Process conditions evolve. In regulated environments, a vendor updating a foundation model can alter outputs without any action by the organization — and if no one is watching, the change goes undetected until something fails visibly. The steward owns this ongoing judgment: is this application still performing as intended, in the current context?</p>
+
+  <h2 class="section">Enabler, Not Cop</h2>
+
+  <p>This is the reframe that matters most. The steward isn't compliance enforcement. The steward is what makes it <em>safer</em> for the organization to let people experiment — which means the organization can <em>afford</em> to let them experiment. Without the steward, the sandbox is an isolated playground with no connection to production. With the steward, experiments have a governed path forward.</p>
+
+  <div class="pull">The steward is what converts the sandbox from <span>"interesting side project" to "innovation pipeline."</span></div>
+
+  <h2 class="section">What This Looks Like in Practice</h2>
+
+  <p>A process engineer has been running experiments in a data sandbox for several months, exploring patterns in alarm history data. She's trained as an AI steward for her area. A colleague prototypes an alarm pattern analysis tool — something that could flag recurring sequences that precede equipment faults.</p>
+
+  <p>The steward reviews it. She identifies that the training data includes readings from a sensor that was recalibrated six months ago. The pre-calibration data follows different patterns — not because the process changed, but because the measurement changed. If the model trains on both, it learns a pattern that no longer exists.</p>
+
+  <p>She flags this before the tool moves beyond the sandbox. The colleague adjusts the training window. The tool improves. It eventually moves to a pilot.</p>
+
+  <p>A central AI team wouldn't have caught this. They wouldn't have known about the recalibration. The steward caught it because she has both domain knowledge — she was there when the sensor was recalibrated — and AI literacy — she understands why training data quality matters. That intersection is the entire point of the role.</p>
+
+  <h2 class="section">The Full Picture</h2>
+
+  <p>Step back and look at the three articles together.</p>
+
+  <p>The shadow tier is the problem: when organizations suppress AI use, they don't eliminate it. They push it underground, losing visibility, documentation, and the organizational learning loop.</p>
+
+  <p>Training without tooling is the failed solution: you can't train your way out of an organizational design problem. Without practice environments, skills decay. Without training, tools are wasted.</p>
+
+  <p>The AI steward, embedded in a sandbox ecosystem with a progressive competency pathway, is the proposed model: distributed governance that enables innovation instead of suppressing it. Domain experts who can judge AI applications in context. Governed experimentation that has a real path to production.</p>
+
+  <h2 class="section">An Honest Caveat</h2>
+
+  <p>I want to be clear about what this is and isn't. This isn't a proven framework. It's a set of interlocking ideas — drawn from Eric von Hippel's user innovation research, training transfer science, and distributed governance models like DAMA — that I believe fit together logically. The steward role is proposed, not validated. The sandbox concept has analogues in other regulated industries — fintech regulatory sandboxes, nuclear energy RegLab initiatives — but it hasn't been implemented in this integrated form in manufacturing.</p>
+
+  <p>These ideas need pressure-testing. If you're working on similar problems — or if your organization has tried something like this — I'd like to hear about it. Not for validation, but because the gap between theory and implementation is where the real learning happens.</p>
+
+  <div class="endmark">· · ·</div>
+
+  <nav class="series-nav">
+    <a href="training-without-tooling.html">
+      <div class="dir">← Part 2 · Previous</div>
+      <div class="t">Training Without Tooling</div>
+    </a>
+    <a class="next" href="../papers/index.html">
+      <div class="dir">The full argument →</div>
+      <div class="t">White paper: Sandboxes, Stewards, and the Governance Gap</div>
+    </a>
+  </nav>
+
+</article>
+</div>
+
+<footer class="site-foot">
+  <div class="cols">
+    <div>© 2026 Martin Kockx</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/martinkockx/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:mkockx12@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

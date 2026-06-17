@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Papers &amp; Research — Martin Kockx</title>
-<meta name="description" content="White papers and research on digital architecture for pharmaceutical manufacturing and AI governance.">
+<meta name="description" content="White papers and research on digital architecture for pharmaceutical manufacturing and AI governance — the Intent-Driven Digital Core and the Sandboxes, Stewards, and the Governance Gap framework.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -39,41 +39,81 @@
 </header>
 
 <section class="block">
+  <div class="wrap">
+
+    <!-- FEATURE: Thesis -->
+    <div class="card" style="margin-bottom:22px;">
+      <span class="ctag">White Paper · Thesis</span>
+      <h3>From Design to Deployment: A Digital Architecture Strategy</h3>
+      <p style="color:var(--ink-soft);font-size:16px;">
+        The life sciences industry invests heavily in digital technologies, yet manufacturers continue to struggle with fragmented data, manual reconciliation, and limited return. This paper argues the root cause is <em>architectural, not technological</em>. It introduces the <strong>Intent-Driven Digital Core (IDDC)</strong> — a four-layer framework (Semantic, Event, Context, Evidence) that preserves manufacturing intent as a persistent, machine-readable construct across the full product lifecycle. Building on ISA-88, ISA-95, and ICH guidance, the IDDC makes technology transfer repeatable rather than bespoke, shifts batch disposition from retrospective reconstruction to continuous evaluation, and gives AI the contextual grounding required for trust in regulated environments.
+      </p>
+      <p class="muted" style="margin-bottom:6px;"><strong>What's inside:</strong> Manufacturing intent as the architectural anchor · the IDDC reference architecture · ontology as a contract of meaning · people as an architectural dependency · digital technology transfer as the ultimate stress test · AI enablement as a consequence of architecture · an alarm-management case study in cell therapy manufacturing.</p>
+      <div class="meta">
+        <span class="badge draft">v6 · Working paper</span>
+        <span>~70 pages</span>
+        <span class="muted">· PDF coming soon — <a href="mailto:mkockx12@gmail.com?subject=From%20Design%20to%20Deployment%20%E2%80%94%20paper%20request">request a copy</a></span>
+      </div>
+    </div>
+
+    <!-- FEATURE: White paper -->
+    <div class="card" style="margin-bottom:22px;">
+      <span class="ctag">White Paper · AI Governance</span>
+      <h3>Sandboxes, Stewards, and the Governance Gap</h3>
+      <p class="muted" style="margin-top:-4px;">An Organizational Model for AI in Regulated Manufacturing</p>
+      <p style="color:var(--ink-soft);font-size:16px;">
+        Centralized AI governance in regulated manufacturing creates a structural paradox: restrictive policies meant to manage risk drive AI use underground into a <em>shadow tier</em> — invisible, ungoverned, and disconnected from organizational learning. In April 2026, the FDA's first warning letter citing inappropriate AI use in pharmaceutical manufacturing turned that shadow tier from a theoretical risk into a documented enforcement trigger. This paper proposes an integrated architecture — sandbox environments for structured experimentation, a competency-tier model coupling training with tool access, and AI stewards (named individuals with dual fluency in domain expertise and AI literacy, carrying explicit GxP accountability). The components exist independently across industries; the argument is that they are interdependent by design. The integration is the contribution.
+      </p>
+      <p class="muted" style="margin-bottom:6px;"><strong>Also introduces:</strong> the Attributable–Observable–Correctable design discipline for human oversight of AI outputs, and the GxP-steward specification for functions where AI influences quality decisions.</p>
+      <div class="meta">
+        <span class="badge draft">v2 · Working paper</span>
+        <span>~13,000 words</span>
+        <span class="muted">· based on the <a href="../articles/shadow-tier.html">3-part series →</a> · PDF coming soon</span>
+      </div>
+    </div>
+
+    <div class="note" style="max-width:64ch;">
+      Full PDFs are being regenerated from the latest source versions and will be attached here for download. For an advance copy of either paper, <a href="mailto:mkockx12@gmail.com">get in touch</a>.
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
   <div class="wrap-wide">
+    <div class="section-head"><h2>Article series</h2><a href="../articles/index.html">All writing →</a></div>
     <div class="card-grid">
+      <a class="card" href="../articles/shadow-tier.html">
+        <span class="ctag">AI Sandboxes &amp; Stewards</span>
+        <h3>The Shadow, the Sandbox &amp; the Steward</h3>
+        <p>The three-part LinkedIn series the white paper is built on: the shadow tier, training without tooling, and the AI steward.</p>
+        <div class="meta"><span class="pill">3 parts</span></div>
+      </a>
+      <a class="card" href="../articles/we-commission-systems-and-equipment.html">
+        <span class="ctag">Operational Readiness</span>
+        <h3>Commissioning the Organization</h3>
+        <p>A two-part field-note series on why good systems stall at the floor — and the readiness discipline that fixes it.</p>
+        <div class="meta"><span class="pill">2 parts</span></div>
+      </a>
+    </div>
+  </div>
+</section>
 
-      <div class="card">
-        <span class="ctag">White Paper</span>
-        <h3>Sandboxes, Stewards, and the Governance Gap</h3>
-        <p>A governance model for AI in regulated manufacturing — named, dual-fluency stewards and a sanctioned innovation pathway between shadow use and enterprise control.</p>
-        <div class="meta"><span class="badge published">Accepted</span> <span class="muted">PDF — coming soon</span></div>
-      </div>
-
-      <div class="card">
-        <span class="ctag">Working Paper</span>
-        <h3>The Shadow Tier</h3>
-        <p>Why restrictive AI policy doesn't prevent use — it displaces it underground — and what that costs organizations in risk and forgone learning.</p>
-        <div class="meta"><span class="badge draft">Working</span> <span class="muted">PDF — coming soon</span></div>
-      </div>
-
+<section class="block">
+  <div class="wrap-wide">
+    <div class="section-head"><h2>Also in progress</h2></div>
+    <div class="card-grid">
       <div class="card">
         <span class="ctag">White Paper</span>
         <h3>Semantic Interoperability for Manufacturing Intent</h3>
-        <p>Shared semantic structures so process intent survives technology transfer instead of being reconstructed, site by site, from documentation.</p>
+        <p>Shared semantic structures so process intent survives technology transfer instead of being reconstructed, site by site.</p>
         <div class="meta"><span class="badge soon">Planned</span></div>
       </div>
-
       <div class="card">
         <span class="ctag">White Paper</span>
         <h3>Continuous Batch Disposition</h3>
         <p>Reframing batch release as a continuous, go/no-go discipline under an intent-driven digital core.</p>
         <div class="meta"><span class="badge soon">Planned</span></div>
       </div>
-
-    </div>
-
-    <div class="note" style="max-width:62ch;">
-      This list is curated from an active research pipeline. Download links will be attached as papers are cleared for public release. For a copy of any paper in progress, get in touch.
     </div>
   </div>
 </section>
@@ -82,9 +122,9 @@
   <div class="cols">
     <div>© 2026 Martin Kockx</div>
     <div class="links">
-      <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/martinkockx/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:hello@example.com">Email</a>
+      <a href="mailto:mkockx12@gmail.com">Email</a>
     </div>
   </div>
 </footer>
