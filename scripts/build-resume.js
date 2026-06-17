@@ -135,10 +135,11 @@ const doc = new Document({
       // ---- EXPERIENCE ----
       sectionHeading("Professional Experience"),
       ...job("Principal Manufacturing Systems Engineer", "Sep 2024 – Present", "Vertex Pharmaceuticals — Boston, MA", [
-        "Partner with manufacturing and technology leadership to set smart-manufacturing strategy and roadmap across the manufacturing systems portfolio.",
-        "Define the data architecture and governance that make manufacturing data AI-ready; prioritize and shepherd AI use cases from concept to governed deployment.",
-        "Lead evaluation, selection, implementation, and lifecycle management of manufacturing systems, and manage strategic vendor relationships.",
-        "Ensure solutions meet GxP, data-integrity, and computer-system-lifecycle requirements (21 CFR Part 11, EU Annex 11, GAMP 5).",
+        "Own the full lifecycle of manufacturing systems and partner with manufacturing and technology leadership to set smart-manufacturing strategy and roadmap.",
+        "Led the search, evaluation, selection, and the deployment, implementation, and validation of a new SCADA system for the Cell & Gene Therapy (CGT) department.",
+        "Drive manufacturing ontology and the knowledge / semantics layer, plus industrial DataOps investigations, to advance AI readiness, data enablement, and the next phase of the digitization journey.",
+        "Partner with manufacturing, engineering, and quality leaders toward commercial readiness; contribute to batch disposition and related initiatives.",
+        "Ensure GxP, data-integrity, and computer-system-lifecycle compliance (21 CFR Part 11, EU Annex 11, GAMP 5).",
       ]),
       ...job("Digital Plant Program Manager", "2023 – 2024", "MilliporeSigma — Burlington, MA", [
         "Built and led a new global Digital Plant Program spanning 62 manufacturing facilities.",
@@ -147,9 +148,11 @@ const doc = new Document({
         "Established the digital roadmap connecting plant-floor systems to enterprise data and analytics.",
       ]),
       ...job("Staff Automation Engineer", "2021 – 2023", "Thermo Fisher Scientific — Cambridge, MA", [
-        "Served as department SME and technical strategist across a portfolio of capital engineering projects.",
-        "Defined automation strategy from pipeline needs and industry direction, increasingly oriented to data capture, integration, and analytics readiness.",
-        "Led project delivery and mentored the automation team, bridging plant-floor controls with the enterprise data layer.",
+        "First operating-company role—embedded daily with manufacturing, quality, and validation, shifting from one-off technology deployment to full-lifecycle ownership of systems.",
+        "Closed equipment integration gaps facility-wide—making all equipment integratable, remotely accessible, and maintainable, and onboarding systems into Active Directory to cut the passwords users had to manage.",
+        "Streamlined automation support by launching apps to request, track, and self-resolve issues against a known-issues knowledge base, backed by an internal issue/resolution tracker that sped search and reuse of prior fixes.",
+        "Led development and go-live of a facility-wide alarm management system—all alarms in a single pane of glass with disposition and escalation-based notifications—and a centralized batch reporting engine delivering consistent reports across any vendor or system.",
+        "Ran vendor evaluation, scoring, and selection for an electronic batch record (eBR) system, defining use-case scope, business requirements, and justification through to a recommended plan.",
       ]),
       ...job("Senior Project Engineer", "2020 – 2021", "Constellation Brands — Napa, CA", [
         "Process and automation engineering for large-scale production operations.",
@@ -169,7 +172,7 @@ const doc = new Document({
       sectionHeading("Selected Projects"),
       bullet("Smart manufacturing roadmap & AI/data enablement (Vertex) — strategy and architecture to make manufacturing data AI-ready, with a prioritized portfolio of AI use cases across the manufacturing systems estate."),
       bullet("Global Digital Plant Program, 62 sites (MilliporeSigma) — sector target architecture, digital strategy, and portfolio governance connecting plant systems to enterprise data and analytics."),
-      bullet("Enterprise automation & digital strategy (Thermo Fisher) — department-wide automation and data-capture strategy across a multi-project pipeline."),
+      bullet("Facility-wide alarm management & centralized batch reporting (Thermo Fisher) — consolidated all facility alarms into a single pane of glass with escalation notifications, and a reporting engine producing consistent batch reports across any vendor or system."),
       bullet("Greenfield biologics PCS/BMS — full SCADA suite, process formulation and clean-utility systems, GMP HVAC, and equipment integration; SDS/HDS, PLC programming, FAT/SAT."),
       bullet("GMP OSIsoft PI design & implementation — historian solution and network architecture across manufacturing lab → pilot plant → production at a major biotech facility."),
 
