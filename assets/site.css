@@ -205,6 +205,9 @@ figure .figtitle{font-size:12px;letter-spacing:.14em;text-transform:uppercase;co
   font-weight:600;margin-bottom:22px;display:flex;align-items:center;gap:8px;}
 figure .figtitle::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--amber);transform:rotate(45deg);}
 figcaption{margin-top:18px;font-size:14.5px;color:var(--ink-faint);line-height:1.5;text-align:center;}
+.fig-img{width:100%;height:auto;display:block;border-radius:10px;}
+/* diagrams are drawn for a light canvas — give them a white backing in any theme */
+.fig-img.on-white{background:#fff;padding:16px;border-radius:10px;}
 
 /* FIG: process-to-wall timeline (Part 1) */
 .timeline{display:flex;align-items:stretch;gap:0;flex-wrap:nowrap;}
@@ -295,7 +298,8 @@ figcaption{margin-top:18px;font-size:14.5px;color:var(--ink-faint);line-height:1
   padding:5px 13px;margin:4px 6px 4px 0;font-size:13px;color:var(--ink-soft);}
 
 @media print{
-  #progress,.site-nav,.theme-toggle,.series-nav{display:none;}
+  #progress,.site-nav,.theme-toggle,.series-nav,.cta-row{display:none;}
+  .lead-hero{background:none;padding:12px 0 8px;border-bottom:1px solid #ccc;}
   body{background:#fff;font-size:12pt;color:#000;}
   figure,.pull{break-inside:avoid;box-shadow:none;}
 }

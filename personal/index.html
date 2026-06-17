@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal — Martin Kockx</title>
+<meta name="description" content="Personal projects, side experiments, and the occasional thought or photo from outside the day job.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/theme.js"></script>
+<style>
+  .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:8px;}
+  .photo-tile{aspect-ratio:4/3;border-radius:12px;border:1px dashed var(--rule);background:var(--paper-2);
+    display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:13px;text-align:center;padding:10px;}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="bar">
+    <a class="brand" href="../index.html">Martin <span class="mk">Kockx</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../articles/index.html">Writing</a></li>
+      <li><a href="../papers/index.html">Papers</a></li>
+      <li><a href="../resume/index.html">Résumé</a></li>
+      <li><a href="index.html" aria-current="page">Personal</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="lead-hero">
+  <div class="wrap-wide">
+    <div class="eyebrow">Personal</div>
+    <h1>Beyond the day job</h1>
+    <p class="tagline">Side projects, experiments, and the occasional thought or photo from outside the work.</p>
+    <p class="bio">The professional pages are the polished side of things. This one's looser — what I'm tinkering with, building for myself, and finding interesting. It'll grow over time.</p>
+  </div>
+</header>
+
+<section class="block">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <h2>Projects &amp; experiments</h2>
+      <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+    <div class="card-grid">
+
+      <div class="card">
+        <span class="ctag">App · In development</span>
+        <h3>WineApp</h3>
+        <p>A personal app for tracking and exploring wine — cellar, tastings, and notes. A playground for ideas as much as a useful tool. <span class="muted">[Add description + link when public.]</span></p>
+        <div class="meta"><span class="badge soon">Building</span></div>
+      </div>
+
+      <div class="card">
+        <span class="ctag">More to come</span>
+        <h3>Other tinkering</h3>
+        <p>Tools, automations, and small experiments. As repos go public they'll show up here — eventually pulled in automatically from GitHub.</p>
+        <div class="meta"><span class="badge soon">Soon</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <h2>Notes &amp; curiosities</h2>
+    </div>
+    <div class="prose" style="max-width:64ch;">
+      <p>A spot for things that don't belong on a résumé — short thoughts, things I'm reading, photos from the road, whatever's caught my attention. Less curated, more human.</p>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-tile">photo / moment</div>
+      <div class="photo-tile">photo / moment</div>
+      <div class="photo-tile">photo / moment</div>
+      <div class="photo-tile">a thought…</div>
+    </div>
+    <p class="muted" style="margin-top:14px;">Placeholders for now — drop images into <code>assets/personal/</code> and swap these tiles, or replace this block with short note cards.</p>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="cols">
+    <div>© 2026 Martin Kockx</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/martinkockx/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:kockx.martin.pub@pm.me">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
