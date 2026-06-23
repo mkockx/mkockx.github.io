@@ -111,7 +111,7 @@ const doc = new Document({
           new TextRun({ text: "  |  ", size: 19, color: SOFT }),
           new ExternalHyperlink({ link: "https://www.linkedin.com/in/martinkockx/", children: [new TextRun({ text: "linkedin.com/in/martinkockx", size: 19, color: ACCENT })] }),
           new TextRun({ text: "  |  ", size: 19, color: SOFT }),
-          new ExternalHyperlink({ link: "https://mkockx.github.io", children: [new TextRun({ text: "mkockx.github.io", size: 19, color: ACCENT })] }),
+          new ExternalHyperlink({ link: "https://martinkockx.org", children: [new TextRun({ text: "martinkockx.org", size: 19, color: ACCENT })] }),
         ],
       }),
 
