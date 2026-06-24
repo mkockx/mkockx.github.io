@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upskilling in the Age of AI — Martin Kockx</title>
+<meta name="description" content="The binding constraint on AI value in regulated manufacturing isn't the tools or the rules — it's whether the workforce has the skill to turn capable tools into defensible work. Why governance without capability fails.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/theme.js"></script>
+<style>
+  /* References — scoped to this essay; promote to site.css if it recurs */
+  sup.ref{font-size:.7em;line-height:0;font-weight:600;}
+  sup.ref a{text-decoration:none;padding:0 .1em;}
+  .refs{margin-top:8px;border-top:1px solid var(--rule);padding-top:18px;}
+  .refs h2{margin-bottom:.4em;}
+  .refs ol{margin:0;padding-left:1.4em;}
+  .refs li{font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-bottom:12px;}
+  .refs li::marker{color:var(--accent);font-weight:600;}
+  .refs cite{font-style:italic;}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav class="site-nav">
+  <div class="bar">
+    <a class="brand" href="../index.html">Martin <span class="mk">Kockx</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Writing</a></li>
+      <li><a href="../papers/index.html">Papers</a></li>
+      <li><a href="../resume/index.html">Résumé</a></li>
+      <li><a href="../personal/index.html">Personal</a></li>
+      <li>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="art-hero">
+  <div class="wrap">
+    <div class="kicker">AI &amp; the Workforce · Field Notes</div>
+    <h1>Upskilling in the Age of AI</h1>
+    <p class="dek">Why governance without capability fails in pharmaceutical manufacturing.</p>
+    <div class="byline">
+      <strong>Martin Kockx</strong>
+      <span class="dot"></span>
+      <span>Manufacturing Systems &amp; Digital Operations</span>
+      <span class="dot"></span>
+      <span>13 min read</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<article>
+
+  <p class="lead">Pharmaceutical manufacturing organizations frame AI adoption as a procurement and governance problem — which tools to buy, which to permit, how to control them. The framing is wrong. The binding constraint on AI value in regulated industry is neither the tools nor the rules; it is whether the workforce has the skill to turn capable tools into defensible work.</p>
+
+  <h2 class="section">The real barrier is a skills gap, not a tooling gap</h2>
+
+  <p>The pharmaceutical industry talks about AI adoption as if the hard questions were procurement and permission: which models are validated, which vendors are compliant, which tools the policy will allow. These are real questions, but they are not the binding constraint. An organization can buy the most capable tools on the market and permit them freely and still capture almost no value, because the constraint that actually determines outcomes is whether the people using those tools have the skill to turn them into defensible work.</p>
+
+  <p>Skill, here, is not prompt-writing cleverness. It is the literacy to know what a model can and cannot do — where it is reliable, where it confabulates, and how to tell the difference in a context where being wrong has regulatory consequences. A process scientist who can prompt a language model to draft a deviation investigation but cannot recognize when its causal reasoning is plausible nonsense has not been upskilled; she has been handed a faster way to be confidently wrong. The skill that matters is the judgment to interrogate an output rather than transcribe it.</p>
+
+  <p>This is sharper in regulated manufacturing than almost anywhere else, because GxP data carries epistemic bias: it encodes the assumptions, sampling choices, and blind spots of the validated processes that generated it. A model trained or prompted on that data inherits those blind spots. The skilled analyst is the one who knows this — who treats an AI output as a hypothesis to be tested against process knowledge, not an answer to be pasted into a controlled document. The gap between owning capable tools and having a workforce that can wield them with that kind of judgment is the real gap. Closing it is the work.</p>
+
+  <div class="pull">Training without tooling is quickly forgotten; <span>tooling without training is wasted.</span></div>
+
+  <p>That is the cleanest statement of the problem, and most organizations are failing on both halves at once. The tools and the rules matter — and as I argue below, getting the rules right is genuinely hard — but they are not where adoption succeeds or fails. Skill is. And the failure to build it is largely self-inflicted.</p>
+
+  <h2 class="section">The misdiagnosis: treating access as risk</h2>
+
+  <p>The conventional argument for restrictive AI governance runs as follows: GxP environments require data integrity, audit trails, and validated systems; commercially available AI tools do not meet these requirements; therefore access must be limited until compliant solutions exist. The argument is correct about regulatory requirements and wrong about the problem it is solving. You cannot build skill on tools that people are not allowed to touch. Restriction does not pause the skills problem — it widens it, because the workforce stops developing capability inside the institution at exactly the moment the technology is moving fastest.</p>
+
+  <p>Restriction also fails on its own terms, because it does not actually stop AI use. Employees experiment anyway, on personal devices, in the gap between sanctioned systems and the work in front of them — what Mollick calls the &ldquo;secret cyborg&rdquo; dynamic.<sup class="ref"><a href="#r1">1</a></sup> The organization bears the risk of this behavior, as outputs cross from uncontrolled tools into GxP-adjacent workflows without traceability, while capturing none of the learning. The GxP/non-GxP boundary is not the boundary between safe and unsafe AI use; a model influencing a controlled decision through an undocumented personal-device pathway is inside the risk domain no matter how the tool is classified. Restriction does not close that gap. It moves the risk — and the skill-building — out of the organization&rsquo;s field of view.</p>
+
+  <p>Underneath the compliance language sits a quieter assumption, and this is where trust enters the argument. To withhold capable tools in the name of safety is, at root, to assert that the workforce cannot be entrusted with them. That assertion is what starves skill development, because skill is built through sanctioned, supported, accountable use — not through a permission queue. As one practitioner framing puts it: <em>it is an insult to our employees to tell them they cannot use these tools because we do not trust them.</em> Trust is not the argument, but it sits underneath it: an organization that does not trust its people will not give them access, and a workforce without access cannot become skilled.</p>
+
+  <h2 class="section">User innovation and the manufacturing workforce</h2>
+
+  <p>Eric von Hippel&rsquo;s research on user innovation established that breakthrough innovations in many industries originate not from central R&amp;D functions but from the practitioners who use products and processes to solve their own problems.<sup class="ref"><a href="#r2">2</a></sup> Users innovate when they have both the need and the means — domain expertise combined with access to tools capable of addressing that need. When an organization concentrates innovation resources centrally while restricting practitioner access, it systematically suppresses its highest-value source of use-case discovery.</p>
+
+  <p>This maps directly onto pharmaceutical manufacturing. The people closest to the process — operators, process scientists, quality analysts, automation engineers — hold the domain knowledge required to locate where AI creates genuine value: which alarm patterns are truly anomalous versus instrument drift, which deviation records encode causal assumptions worth interrogating, which documentation rituals are consuming skilled time that could be redirected to process improvement. A central governance team cannot generate these insights from the outside. They emerge from practitioners working real problems with capable tools — which is precisely the activity that builds skill as a byproduct.</p>
+
+  <p>Von Hippel&rsquo;s model carries a further implication, with a caveat. Users freely reveal their innovations to one another — but the documented cases are cross-firm communities of independent users, not employees inside a single competitive organization, where sharing is not automatic.<sup class="ref"><a href="#r3">3</a></sup> Inside the firm, that connective tissue has to be built deliberately. A center of excellence that creates sanctioned experimentation channels, documents what employees discover, and rewards ingenuity publicly is that infrastructure: it converts individual discovery into organizational capability. Without it, each person&rsquo;s innovation stays local and ephemeral. With it, the organization accumulates a compounding library of domain-specific applications grounded in operational reality.</p>
+
+  <h2 class="section">Collective intelligence as organizational architecture</h2>
+
+  <p>Thomas Malone&rsquo;s research on collective intelligence demonstrated that groups, like individuals, vary in their capacity for intelligent problem-solving — and that the variance is explained not primarily by individual IQ but by social perceptiveness, equal participation, and the quality of information-sharing within the group.<sup class="ref"><a href="#r4">4</a></sup> Later work extended these predictors to online, asynchronous collaboration as well, suggesting collective intelligence is a general organizational property rather than a context-specific one.</p>
+
+  <p>For an organization deploying AI, the implication is direct. The goal is not to substitute machine intelligence for human intelligence; it is to raise the collective intelligence of the human-machine system. An organization that deploys AI to a small, technically specialized tier while excluding the broader workforce is not becoming more collectively intelligent. It is concentrating capability in a narrow group while the majority remains in a low-agency, low-skill relationship with the technology — which is exactly the participation deficit Malone&rsquo;s research identifies as the thing that suppresses group intelligence.</p>
+
+  <p>This is what reframes the center of excellence from a gatekeeping function into a connective one. The conventional model — a central team that approves use cases and deploys vetted solutions to passive end users — optimizes for control and starves participation. The connective model publishes developments, facilitates peer learning, documents practitioner discoveries, and builds the feedback loops through which individual experimentation becomes shared capability. Even the most experienced practitioners are learning week to week as new models arrive; the aim is not expertise hoarded by a few but a learning organization in which each person&rsquo;s discovery accelerates everyone else&rsquo;s.</p>
+
+  <h2 class="section">How skill is built: sandboxes, not classrooms</h2>
+
+  <p>If the skills gap is the barrier, the obvious question is how skill is actually built — and the answer is not a training catalog. The kind of judgment described above is not acquired in a classroom and then switched on when access finally arrives. It is built by doing: supervised, sanctioned, hands-on work on real problems with real tools. Training divorced from tooling decays before it is ever used. Upskilling that works is participation-based — people learn the tool by using it inside boundaries they understand.</p>
+
+  <p>The environment that makes this safe is a sandbox: a bounded space where practitioners work with capable tools on real or realistic data, with explicit limits and a defined path for escalating anything promising. It is the opposite of unfettered access — access made observable and accountable, which is exactly the condition under which the shadow tier dissolves, because experimentation that was happening on personal devices now happens where the organization can see it, support it, and learn from it. I develop the sandbox model — its data, tool, and process variants and the guardrails each requires — at length elsewhere.<sup class="ref"><a href="#r7">7</a></sup><sup class="ref"><a href="#r8">8</a></sup> What matters here is the pedagogy, not the plumbing. Each variant, in effect, says the thing restrictive policy refuses to say: <em>we trust you enough to let you try.</em></p>
+
+  <p>A hackathon is the sandbox compressed into an event — and the fastest way to turn this progression into something an organization can watch happen. Give cross-functional teams a bounded window, realistic data, capable tools, and a problem drawn from their own work — a recurring deviation pattern, a documentation ritual that consumes skilled hours, an alarm-classification nuisance — and skill-building that would otherwise accrue through months of episodic experimentation is concentrated into days. The format does several things at once that map directly onto the argument already laid out: it forces the equal participation and dense information-sharing Malone identifies as the drivers of collective intelligence; it surfaces von Hippel&rsquo;s user innovations from the practitioners closest to the process; and it makes every output observable, because the work happens in the open rather than on a personal device. The key is that a hackathon is not a one-off morale event. Run on a cadence and wired into the connective center of excellence — which captures what teams build, hardens the promising prototypes, and hands them to the steward escalation path described below — it becomes a renewable engine for converting individual discovery into organizational capability, and a low-stakes proving ground where a practitioner moves up the competency ladder in public.</p>
+
+  <p>Competency built this way is a progression, not a binary — from supervised use, to independent use, to guiding others and shepherding their work toward deployment, which is to say the skill ladder and the steward role described next are the same structure seen at two heights. This is not theoretical: industrial AI-upskilling curricula built on precisely this learning-by-doing pedagogy already exist, and my own data-stewardship and front-line enablement programs for the regulated-manufacturing community use participation-based, scope-defined practice as their core method rather than lectures followed by hope. What most organizations lack is not the curriculum but the willingness to grant the access it requires.</p>
+
+  <h2 class="section">The AI steward: distributing the governance skill</h2>
+
+  <p>Enabling experimentation is only half the problem. The other half is ensuring the path from informal, AI-assisted work to validated, auditable deployment preserves regulatory integrity — and that path is where most governance frameworks go silent. My answer, developed in full elsewhere,<sup class="ref"><a href="#r7">7</a></sup><sup class="ref"><a href="#r8">8</a></sup> is the <strong>AI steward</strong>: a distributed secondary role modeled on the business data steward, pairing domain expertise with AI literacy and embedded inside existing functional teams rather than a separate department. The steward monitors responsible use, shepherds promising applications along a defined escalation path — sanctioned experimentation, documented use case, proportionate risk assessment, and, where warranted, formal validation under change control — and owns the continuous post-deployment review AI uniquely demands.</p>
+
+  <p>The point worth isolating here is that last duty, the least understood. Unlike conventional validated software, AI systems can change behavior through vendor-initiated model updates outside the organization&rsquo;s control, and in a GxP context such an update may trigger revalidation — the formal re-checking a validated system requires whenever it is materially altered. The judgment about whether a given update constitutes a change requiring formal change control is, in most pharmaceutical organizations today, simply unassigned. The steward makes that ownership explicit and places it with people equipped to exercise it — itself a form of distributed, deliberately cultivated skill.</p>
+
+  <h2 class="section">The two-speed model: building capability at the right velocity</h2>
+
+  <p>Differentiation, not uniformity, is the right response to this complexity: a two-speed model that lets each part of the organization move at the pace its regulatory exposure warrants. Non-GxP functions — IT, HR, commercial — should experiment broadly and fail cheaply to build the organizational AI muscle that later adoption in regulated contexts will depend on. GxP-adjacent functions — quality, regulatory affairs, process development — move deliberately, because AI acceleration there must preserve the oversight properties I have elsewhere called the <strong>Attributable–Observable–Correctable (AOC)</strong> test for a defensible GxP decision.<sup class="ref"><a href="#r8">8</a></sup> I treat the full model, including its three-speed refinement, in the <a href="../papers/index.html">companion white paper</a>; here it is enough to see what becomes possible when skill and tooling finally meet.</p>
+
+  <p>A complex assessment framework that once demanded months of development effort — or, more likely, was never built because the investment could not be justified — can now be translated by a domain expert working with AI coding tools into a functional web application in days. The AI Data Assessment Tool, a practitioner-built application implementing the AI Assurance Framework, is one such case: it scores a site&rsquo;s data readiness against the framework&rsquo;s assurance criteria — a workbook&rsquo;s worth of assessment logic, turned into working software by a domain expert rather than a software team. Nothing was automated away and no headcount displaced; a capability that did not previously exist was created, because the binding constraint had been economic, not technical. That is von Hippel&rsquo;s user innovation operating at the level of a single skilled practitioner — a direct illustration of Winston&rsquo;s framing of near-term AI value as the opening of new possibilities rather than the automation of old ones.<sup class="ref"><a href="#r6">6</a></sup></p>
+
+  <h2 class="section">The long game: intelligence preservation</h2>
+
+  <p>One risk is underweighted relative to the attention it gets: not job loss, but intelligence loss. Two modes of AI use pull in opposite directions. The first creates capability that never existed — the additive mode of the assessment tool above, where a skilled practitioner simply did more. The second quietly absorbs the analytical and documentation work through which people build judgment in the first place; when AI does that work and the workforce never builds the skill, expertise atrophies — the process intuition that separates a genuine quality signal from an instrumentation artifact, the regulatory literacy that makes a risk assessment defensible. This is Malone&rsquo;s collective-intelligence argument extended over time,<sup class="ref"><a href="#r5">5</a></sup> and the design response I have elsewhere called <em>intelligence preservation</em>:<sup class="ref"><a href="#r8">8</a></sup> deploy AI not to automate existing work as aggressively as possible but to redirect human capacity toward the work that builds and maintains expertise. The end state is not a smaller workforce doing the same work faster. It is a more genuinely expert one — every employee a manager of their own AI ecosystem, relieved of throughput work so that judgment, process improvement, and cross-functional problem-solving get the attention they were always owed. Getting there is not a procurement decision or a policy decision. It is a decision to treat the workforce&rsquo;s skill as the asset that determines whether the tooling and governance investments return anything at all.</p>
+
+  <div class="endmark">· · ·</div>
+
+  <div class="refs">
+    <h2>References</h2>
+    <ol>
+      <li id="r1">Mollick, E. (2024). <cite>Co-Intelligence: Living and Working with AI</cite>. Portfolio/Penguin. The &ldquo;secret cyborg&rdquo; describes employees who use AI covertly when policy restricts sanctioned access, creating individual benefit while suppressing organizational learning.</li>
+      <li id="r2">Von Hippel, E. (1988). <cite>The Sources of Innovation</cite>. Oxford University Press. Establishes that a substantial share of commercially significant innovation originates from users rather than manufacturers, particularly where users hold strong domain-specific needs and the means to address them.</li>
+      <li id="r3">Von Hippel, E. (2005). <cite>Democratizing Innovation</cite>. MIT Press. Extends the user-innovation framework to the digital era, documenting how users freely share innovations within communities of practice.</li>
+      <li id="r4">Malone, T.&nbsp;W., Laubacher, R., &amp; Woolley, A.&nbsp;W. (2010). &ldquo;Evidence for a Collective Intelligence Factor in the Performance of Human Groups.&rdquo; <cite>Science</cite>, 330(6004), 686–688.</li>
+      <li id="r5">Malone, T.&nbsp;W. (2018). <cite>Superminds: The Surprising Power of People and Computers Thinking Together</cite>. Little, Brown and Company. Argues the most powerful cognitive entities of the near future are human-machine combinations rather than either alone.</li>
+      <li id="r6">Winston, P.&nbsp;H. (2016). &ldquo;The Next 50 Years of AI.&rdquo; MIT CSAIL Faculty Roundtable. The &ldquo;blunder stopping&rdquo; and &ldquo;new possibilities&rdquo; framing positions near-term AI value in preventing costly errors and enabling work that could not previously be done.</li>
+      <li id="r7">Kockx, M. (2026). <cite><a href="index.html">The Shadow, the Sandbox, and the Steward</a></cite>. Article series. The public-facing development of the shadow-tier problem, the training–tooling coupling, and the AI steward role summarized here.</li>
+      <li id="r8">Kockx, M. (2026). <cite><a href="../papers/index.html">Sandboxes, Stewards, and the Governance Gap: An Organizational Model for AI in Regulated Manufacturing</a></cite>. White paper. Full treatment of the sandbox taxonomy, the AI steward role, the Attributable–Observable–Correctable (AOC) framework, the multi-speed deployment model, and the intelligence-preservation argument.</li>
+    </ol>
+  </div>
+
+  <nav class="series-nav">
+    <a href="the-ai-steward.html">
+      <div class="dir">← Related · Series</div>
+      <div class="t">The Shadow, the Sandbox, and the Steward</div>
+    </a>
+    <a class="next" href="../papers/index.html">
+      <div class="dir">The full model →</div>
+      <div class="t">White paper: Sandboxes, Stewards, and the Governance Gap</div>
+    </a>
+  </nav>
+
+</article>
+</div>
+
+<footer class="site-foot">
+  <div class="cols">
+    <div>© 2026 Martin Kockx</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/martinkockx/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mkockx" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:kockx.martin.pub@pm.me">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
